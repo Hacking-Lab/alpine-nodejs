@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  alpine-nodejs:
+    build: .
+    image: hackinglab/alpine-nodejs:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    - HL_USER_PASSWORD=compass
+    ports:
+      - 3000:3000
+
+
