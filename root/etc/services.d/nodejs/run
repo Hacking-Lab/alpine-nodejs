@@ -8,6 +8,5 @@ echo "================================="
 source /etc/hluser
 chown -R node:node /opt/nodejs
 cd /opt/nodejs
-exec sudo -u node node app.js;
 
-
+exec s6-setuidgid node node app.js
